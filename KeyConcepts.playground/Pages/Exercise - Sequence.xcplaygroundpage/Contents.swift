@@ -36,15 +36,18 @@ let lightRed = Color(hue: 4, saturation: 78, brightness: 92, alpha: 100)
 //       You can turn off the fill or border if desired.
 
 // No border, has a fill
-canvas.drawShapesWithBorders = false
+canvas.drawShapesWithBorders = true
 canvas.drawShapesWithFill = true
-canvas.drawEllipse(at: Point(x: 100, y: 100), width: 50, height: 75)
+canvas.fillColor = lightBlue
+canvas.drawEllipse(at: Point(x: 350, y: 200), width: 333, height: 333)
 
 // Has a border, no fill
 canvas.drawShapesWithBorders = true
-canvas.drawShapesWithFill = false
-canvas.drawEllipse(at: Point(x: 200, y: 100), width: 50, height: 75)
+canvas.drawShapesWithFill = true
+canvas.fillColor = lightRed
+canvas.drawEllipse(at: Point(x: 200, y: 200), width: 333, height: 333)
 
+//Write the texts
 
 /*:
  ## Template code
