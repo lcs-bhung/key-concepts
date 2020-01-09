@@ -37,15 +37,17 @@ let lightRed = Color(hue: 4, saturation: 78, brightness: 92, alpha: 100)
 
 // No border, has a fill
 canvas.drawShapesWithBorders = true
-canvas.drawShapesWithFill = true
-canvas.fillColor = lightBlue
-canvas.drawEllipse(at: Point(x: 350, y: 200), width: 333, height: 333)
+canvas.drawShapesWithFill = false
+canvas.borderColor = lightBlue
+canvas.defaultBorderWidth = 100
+canvas.drawEllipse(at: Point(x: 350, y: 200), width: 280, height: 280)
 
 // Has a border, no fill
 canvas.drawShapesWithBorders = true
-canvas.drawShapesWithFill = true
-canvas.fillColor = lightRed
-canvas.drawEllipse(at: Point(x: 200, y: 200), width: 333, height: 333)
+canvas.drawShapesWithFill = false
+canvas.borderColor = lightRed
+canvas.defaultBorderWidth = 100
+canvas.drawEllipse(at: Point(x: 200, y: 200), width: 280, height: 280)
 
 //Write the texts
 
