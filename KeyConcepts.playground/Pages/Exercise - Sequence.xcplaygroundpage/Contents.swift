@@ -38,19 +38,31 @@ let lightRed = Color(hue: 4, saturation: 78, brightness: 92, alpha: 100)
 // No border, has a fill
 canvas.drawShapesWithBorders = true
 canvas.drawShapesWithFill = false
+canvas.borderColor = lightRed
+canvas.defaultBorderWidth = 100
+canvas.drawEllipse(at: Point(x: 200, y: 200), width: 280, height: 280)
+
+canvas.drawShapesWithBorders = true
+canvas.drawShapesWithFill = false
 canvas.borderColor = lightBlue
 canvas.defaultBorderWidth = 100
 canvas.drawEllipse(at: Point(x: 350, y: 200), width: 280, height: 280)
 
 // Has a border, no fill
-canvas.drawShapesWithBorders = true
-canvas.drawShapesWithFill = false
-canvas.borderColor = lightRed
-canvas.defaultBorderWidth = 100
-canvas.drawEllipse(at: Point(x: 200, y: 200), width: 280, height: 280)
+
 
 //Write the texts
-
+canvas.drawText(message: "Friday", at: Point(x: 25, y: 570), size: 10)
+canvas.drawText(message: "December 4 1987", at: Point(x: 25, y: 550), size: 10)
+canvas.drawText(message: "8 pm show", at: Point(x: 25, y: 530), size: 10)
+canvas.drawText(message: "With", at: Point(x: 125, y: 570), size: 10)
+canvas.drawText(message: "Social distortion", at: Point(x: 125, y: 550), size: 10)
+canvas.drawText(message: "and opal", at: Point(x: 125, y: 530), size: 10)
+canvas.drawText(message: "Hollywood palladium", at: Point(x: 275, y: 570), size: 10)
+canvas.drawText(message: "6215 Sunset blvd.", at: Point(x: 275, y: 550), size: 10)
+canvas.drawText(message: "los angeles, california", at: Point(x: 275, y: 530), size: 10)
+canvas.drawText(message: "the jesus", at: Point(x: 25, y: 450), size: 35)
+canvas.drawText(message: "and mary chain", at: Point(x: 25, y: 400), size: 35)
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
